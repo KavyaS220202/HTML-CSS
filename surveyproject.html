@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>surveyform</title>
+    <link rel="stylesheet" href="surveystyle.css">
+    </head>
+    <body>
+      <h1 id="title">Survey form </h1>
+      <p id="description">This survey form is done by Kavya S.</p>
+      <form id="survey-form">
+      <div class="container">
+        <main>
+          <section>
+            <label for="name" id="name-label">
+            Name:
+            <br><br>
+            <input type="text" name="firstname" id="name" placeholder="Enter your name" required>
+            </label>
+             <label for="email" id="email-label">
+              <br>
+             Email:
+             <br><br>
+            <input type="email" name="mail" id="email" name="email" placeholder="enter your email" required>
+            </label>
+            <label for="number" id="number-label">
+              <br>Age(optional):
+              <br><br><input type="number" name="age" id="number" name="number" placeholder="Enter your age" min="10" max="120" required>
+</label>
+<label for="dropdown">
+   <br>which option best suits your current role?
+<br><br>
+   <select id="dropdown" name="role">
+     <option value="">Select current role</option>
+     <option value="1">Student</option>
+     <option value="2">Working professional</option>
+     <option value="3">Fresher</option>
+     <option value="4">Other</option>
+     </select>
+     </label>
+</section>
+</main>
+<section>
+  <label for="refer"><br>
+    Would you refer Miss.Kavya S as a tutor to your friend's circle?
+<br> <br>   <input type="radio" value="refer" id="refer" name="ref" checked> Definitely
+    <input type="radio" id="refer" name="ref" value="refer"> Maybe
+    <input type="radio" value="refer" id="refer" name="ref"> Not sure
+    </label>
+<label for="drop">
+<br>
+  What is your favorite programming language learning from Miss.Kavya S?
+  <br><br>
+  <select id="drop" name="code">
+    <option value="">Select an option</option>
+    <option value="1">C</option>
+    <option value="2">Java</option>
+    <option value="3">Html and css</option>
+    <option value="4">MySQL</option>
+    </select>
+    </label>
+    <label for="checkbox">
+     <br> What would you like to make Miss.Kavya S to get improved?
+      <br><br>
+      <input type="checkbox" value="Teach" >Teaching additional courses
+      <br> 
+      <input type="checkbox" value="videos">Helpful videos <br>
+      <input type="checkbox" value="other">Others
+      </label>
+      </section>
+      </main>
+<main>
+  <section>
+    <label for="comments">
+<br>      Any comments or suggestions?
+      <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write any comments or suggestions.."></textarea>
+    </label>
+    <label for="submit">
+<br>
+      <button type="submit" id="submit" onclick=create()> Submit
+        </button>
+        </section>
+        </main>
+</div>
+</form>
+<script>
+function create()
+{
+  alert("You have successfully completed your survey form...Thanks and Regards");
+}
+</script>
+        </body>
+        </html>
